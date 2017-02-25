@@ -1,0 +1,32 @@
+# turn off splash
+startup_message off
+
+# prefix key
+escape ^Jj
+
+# key binding
+bind 0 remove
+bind 1 only
+bind 2 split
+bind 3 split -v
+bind o focus
+bind w windowlist -b
+bind ^q quit
+
+# show windows list
+hardstatus alwayslastline "[%02c %m/%d] %`%-w%{=b bw}%n %t%{-}%+w"
+hardstatus off
+# show status line
+defhstatus I^En:^EtI
+
+# scrollback line number
+#   prefix key + ESC    : scroll(copy) mode
+#   space key           : set first mark and last mark for copy
+#   prefix key + ]      : paste
+defscrollback 2048
+
+# visual bell
+vbell off
+
+# bash_profile
+shell -$SHELL
